@@ -1,4 +1,4 @@
-# 💫 Hi, I'm Binoy Barman
+# 💫 Hi, I'm Binoy Bhushan Barman Dipu
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Josefin+Sans&weight=450&pause=1000&color=D63AFF&center=true&width=435&height=60&lines=Hello%F0%9F%91%8B%2C+I+am+Binoy;Passionate+Competitive+Programmer;App+Developer;AI+Enthusiast;Feel+free+to+reach+out...!)](https://git.io/typing-svg)
 
