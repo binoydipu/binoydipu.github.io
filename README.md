@@ -2,12 +2,12 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Josefin+Sans&weight=450&pause=1000&color=D63AFF&center=true&width=435&height=60&lines=Hello%F0%9F%91%8B%2C+I+am+Binoy;Passionate+Competitive+Programmer;App+Developer;AI+Enthusiast;Feel+free+to+reach+out...!)](https://git.io/typing-svg)
 
-<img width="380" align="right" alt="Github"
+<img width="380" align="center" alt="Github"
 src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" 
 /> 
 
 ### A little more about me...  
-##
+
 - 👨‍💻 Computer Science & Engineering Student 
 - 🚀 Building apps with Java | Learning Flutter 
 - 💡 3+ years of Competitive Programming experience 
