@@ -14,8 +14,8 @@ src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif"
 - 🏆 Solved 1000+ problems on online coding platforms
 - 🤖 Interested in AI/ML 
 - 📚 Passionate about coding, app development, and problem-solving
-- 📔 Fun fact: I enjoy reading stories.
-- 📫 How to reach me: <a href="binoydipu@gmail.com">binoydipu@gmail.com</a>
+- 📫 How to reach me: <a href="mailto:binoydipu@gmail.com">binoydipu@gmail.com</a>
+- 📄 My Resume: <a href="https://drive.google.com/file/d/1FBotxLSdy8JhCD7Kha_crVykiF5qwdPn/view?usp=drive_link">here</a>
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/binoydipu)
