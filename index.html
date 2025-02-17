@@ -6,254 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binoy Bhushan Barman Dipu</title>
     <link rel="icon" href="icons/verify_icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="images/profile_picture.jpg" alt="Profile Picture" width="150px">
-            <h1>
-                Hello, I'm Binoy Bhushan Barman Dipu
-            </h1>
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/binoy_logo.png" alt="logo" class="logo">
+                <ul id="drawer">
+                    <li><a href="#header" onclick="closedrawer()">Home</a></li>
+                    <li><a href="#about" onclick="closedrawer()">About</a></li>
+                    <li><a href="#projects" onclick="closedrawer()">Projects</a></li>
+                    <li><a href="#contact" onclick="closedrawer()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closedrawer()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opendrawer()"></i>                              
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Binoy</span><br>Barman From Bangladesh</h1>
+            </div>
         </div>
-    </header>
-
-    <br>
-
-    <h2 id="about">About Me</h2>
-    <blockquote>
-        Hi, I'm Binoy Bhushan Barman Dipu, a final-year Computer Science and Engineering student at Leading University,
-        Sylhet.
-        I'm passionate about software development, AI/ML, and competitive programming, with 3+ years of problem-solving
-        experience
-        and 1500+ solved problems. I enjoy building practical applications, from inventory and pharmacy management
-        systems to security
-        apps like Guardi-X. Let's create something innovative together!
-    </blockquote>
-
-    <br>
-
-    <div>
-        <h2 id="education">Education</h2>
-        <h3>Leading University</h3>
-        <p>
-            BSc in Computer Science <br>
-            Feb 2022 - Present | Sylhet, BD <br>
-            CGPA 3.94 / 4.0 (Upto 6th Sem)
-        </p>
-
-        <h3>Murari Chand College</h3>
-        <p>
-            Higher Secondary Certificate (Science) <br>
-            May 2020 | Sylhet, BD <br>
-            GPA 5.0 / 5.0
-        </p>
-
-        <h3>Border Guard Public School and College, Sylhet</h3>
-        <p>
-            Secondary Certificate (Science) <br>
-            Feb 2018 | Sylhet, BD <br>
-            GPA 5.0 / 5.0
-        </p>
     </div>
 
-    <br>
+    <!-- ---------------About --------------------------- -->
 
-    <div>
-        <h2 id="experience">Experience</h2>
-        <h3>Competitive Programmer</h3>
-        <p>
-            Various Online Platforms <br>
-            <i>Feb 2022 - Present | Sylhet, BD</i> <br>
-        <ul>
-            <li>3+ years of experience in data structures, algorithms, and problem-solving.</li>
-            <li>Solved 1500+ problems on online coding platforms</li>
-            <li>Rating: max. 1547(specialist) in Codeforces</li>
-            <li>Participated in 1 ICPC Regional, 1 NCPC, and 3 IUPCs</li>
-            <li>Strong command of C++, Java, and Python for efficient, optimized solutions.</li>
-        </ul>
-        </p>
-    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user_profile.jpg" alt="user_profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Binoy Bhushan Barman Dipu, a final-year Computer Science and Engineering student at
+                        Leading University, Sylhet. I'm passionate about software development, AI/ML, and competitive
+                        programming, with 3+ years of problem-solving experience and 1500+ solved problems. I enjoy
+                        building practical applications, from inventory and pharmacy management systems to security apps
+                        like Guardi-X. Let's create something innovative together!</p>
 
-    <br>
-
-    <div>
-        <h2 id="projects">Projects</h2>
-        <h3>Guardi-X</h3>
-        <p>
-            <i>Sep 2024 - Jan 2025 | Sylhet, BD</i> <br>
-            Worked on building a social security app <a href="https://github.com/binoydipu/guardi-x"
-                target="_blank">(Guardi-X)</a> using Flutter and Firebase as my 3rd year Project. It is a security app
-            to
-            help users report crimes, find missing persons or items, share emergency locations, and access legal
-            support. It
-            features real-time chat, accident reporting, an interactive community, important contacts, SOS alerts, and
-            Bangladeshi law details for legal awareness.
-        </p>
-
-        <h3>QuickStock</h3>
-        <p>
-            <i>Nov 2024 - Jan 2025 | Sylhet, BD</i> <br>
-            Built an inventory management app <a href="https://github.com/binoydipu/quick-stock-app"
-                target="_blank">(QuickStock)</a> using Java and Firebase. It is an app for small businesses, offering
-            features like product catalog management, low-stock alerts, sales tracking, and insightful stock movement
-            reports with pdf generation option. It has roles for admin/owner and the staffs.
-        </p>
-
-        <h3>Chess Arena</h3>
-        <p>
-            <i>Oct 2024 | Sylhet, BD</i> <br>
-            Developed a chess game <a href="https://github.com/binoydipu/chess-arena-game" target="_blank">(Chess
-                Arena)</a>
-            with all its logic and moves using Flutter and Firebase. It could currently be played in offline mode, but I
-            am
-            working on making it online.
-        </p>
-
-        <h3>PC Heaven</h3>
-        <p>
-            <i>Jun 2024 - Jul 2024 | Sylhet, BD</i> <br>
-            Made an E-commerce app <a href="#" target="_blank">(PC Heaven)</a> for computers, mobiles, and other gadgets
-            using Java and SQLite. Here admin performs crud operations and the user can view and buy products by adding
-            products to the cart.
-        </p>
-
-        <h3>Student Record System</h3>
-        <p>
-            <i>Nov 2022 | Sylhet, BD</i> <br>
-            Developed a C program and used file handling to store information about multiple students <a
-                href="#">(Student
-                Record System)</a>, find a particular student, or delete data from it.
-        </p>
-    </div>
-
-    <br>
-
-    <div>
-        <h2 id="achievements">Achievements</h2>
-        <table>
-            <tr>
-                <td>2024 </td>
-                <td>National</td>
-                <td>International Collegiate Programming Contest (DIU) Regionalist</td>
-            </tr>
-            <tr>
-                <td>2024 </td>
-                <td>Round 2</td>
-                <td>Meta Hacker Cup 2024 (International)</td>
-            </tr>
-            <tr>
-                <td>2024 </td>
-                <td>1<sup>st</sup>/60</td>
-                <td>Intra IEEE Programming Contest: Senior</td>
-            </tr>
-            <tr>
-                <td>2024 </td>
-                <td>1<sup>st</sup>/180</td>
-                <td>Java Journey: The Ultimate Test (Programming Contest)</td>
-            </tr>
-            <tr>
-                <td>2024 </td>
-                <td>National</td>
-                <td>National Collegiate Programming Contest (JU) Finalist</td>
-            </tr>
-            <tr>
-                <td>2024 </td>
-                <td>top 80/200</td>
-                <td>Inter-University Programming COntest (SUST)</td>
-            </tr>
-            <tr>
-                <td>2023 </td>
-                <td>1<sup>st</sup>/50</td>
-                <td>Intra LU Programming Contest (LUCC): Junior</td>
-            </tr>
-            <tr>
-                <td>2023</td>
-                <td>1<sup>st</sup>/80</td>
-                <td>LU ACM Programmer Hunt</td>
-            </tr>
-        </table>
-    </div>
-
-    <br>
-
-    <div>
-        <h2 id="skills">Skills</h2>
-        <h3>Programming Languages</h3>
-        <p>C++, Java, Python, C, Dart</p>
-
-        <h3>Frameworks & Tools</h3>
-        <p>Flutter, Firebase, Git, GitHub, Android Studio, VSCode</p>
-
-        <h3>Problem-Solving Techniques</h3>
-        <p>Data Structures, Graph Theory, Maths, Dynamic Programming, Number Theory, Greedy Algorithms</p>
-
-    </div>
-
-    <br> <br>
-
-    <div>
-        <form id="contact" action="#" method="post">
-            <fieldset>
-                <legend>
-                    <h3>Contact Me</h3>
-                </legend>
-
-                <label for="name">Your Name: </label>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <br><br>
-
-                <label for="email">Your Email: </label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <br><br>
-
-                <label for="message">Enter Your Message: </label> <br>
-                <textarea name="textarea" id="message" rows="10" cols="30" placeholder="Enter your message"
-                    required></textarea>
-                <br><br>
-
-                <input type="submit" value="Send">
-
-            </fieldset>
-        </form>
-    </div>
-
-    <br> <br>
-
-    <footer>
-        <div>
-            <p>&copy; 2025 Binoy Bhushan Barman Dipu. All rights reserved.</p>
-            <p>
-                <img src="icons/facebook_icon.png" alt="facebook_icon" width="16px">
-                <a href="https://www.facebook.com/binoy.dipu.9" target="_blank">Facebook</a>
-
-                <img src="icons/linkedin_icon.png" alt="facebook_icon" width="16px">
-                <a href="https://www.linkedin.com/in/binoydipu" target="_blank">LinkedIn</a>
-
-                <img src="icons/gmail_icon.png" alt="facebook_icon" width="16px">
-                <a href="mailto:binoythe999@gmail.com">Gmail</a>
-
-                <img src="icons/youtube_icon.png" alt="facebook_icon" width="16px">
-                <a href="https://www.youtube.com/@binoydipu" target="_blank">YouTube</a>
-
-                <img src="icons/codeforces_icon.svg" alt="codeforces_icon" width="16px">
-                <a href="https://codeforces.com/profile/Dark_Lord_Binoy" target="_blank">Codeforces</a>
-
-                <img src="icons/github_dark_logo.png" alt="facebook_icon" width="16px">
-                <a href="https://github.com/binoydipu" target="_blank">GitHub</a>
-            </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Competitive Programming</span><br>Specialist at Codeforces</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Competitive Programmer</span><br>Participated in 1 ICPC Regional, 1 NCPC, 3 IUPCs
+                                and several solo contests.</li>
+                            <li><span>ACM Mentor & Teacher</span><br>Taught multiple students about C++ and DSA.</li>
+                            <li><span>ACM-Coordinatior</span><br>Worked as ACM Coordinator in IEEE.</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>BSc from Leading University, Sylhet.</li>
+                            <li><span>2020</span><br>HSC from Murari Chand College, Sylhet.</li>
+                            <li><span>2018</span><br>SSC from BGPSC, Sylhet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <!--------------------- Projects ----------------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/guardix_cover.jpg" alt="guardix_cover">
+                    <div class="layer">
+                        <h3>Social Security App</h3>
+                        <p>Guardi-X is a security app built with Flutter to help users report crimes, find missing
+                            persons or items, share emergency locations, and access legal support. It features real-time
+                            chat, accident reporting, an interactive community, important contacts, SOS alerts, and
+                            Bangladeshi law details for legal awareness.</p>
+                        <a href="https://github.com/binoydipu/guardi-x" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/quickstock_cover.jpg" alt="quickstock_cover">
+                    <div class="layer">
+                        <h3>Inventory Management App</h3>
+                        <p>QuickStock is a lightweight inventory management app for small businesses, offering features
+                            like product catalog management, low-stock alerts, sales tracking, and insightful stock
+                            movement reports. Built with Java and Firebase for efficiency and scalability.</p>
+                        <a href="https://github.com/binoydipu/quick-stock-app" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/chess_arena_cover.jpg" alt="chess_arena_cover">
+                    <div class="layer">
+                        <h3>Chess Game App</h3>
+                        <p>Chess Arena is a simple chess game with all its logic and moves using Flutter and Firebase.
+                            It could currently be played in offline mode.</p>
+                        <a href="https://github.com/binoydipu/chess-arena-game" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/binoydipu?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------- Contact ------------------------------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:binoydipu@gmail.com"><i class="fas fa-paper-plane"></i> binoydipu@gmail.com</a></p>
+                    <p><i class="fas fa-phone-square-alt"></i> +88 01869-519491</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/binoy.dipu.9" target="_blank"><img src="icons/facebook_icon.png" alt="facebook_icon"></a>
+                        
+                        <a href="https://www.linkedin.com/in/binoydipu" target="_blank"><img src="icons/linkedin_icon.png" alt="facebook_icon"></a>
+
+                        <a href="mailto:binoydipu@gmail.com"><img src="icons/gmail_icon.png" alt="facebook_icon"></a>
+
+                        <a href="https://www.youtube.com/@binoydipu" target="_blank"><img src="icons/youtube_icon.png" alt="facebook_icon"></a>
+
+                        <a href="https://codeforces.com/profile/Dark_Lord_Binoy" target="_blank"><img src="icons/codeforces_icon.svg" alt="codeforces_icon"></a>
+
+                        <a href="https://github.com/binoydipu" target="_blank"><img src="icons/github-mark-white.png" alt="facebook_icon"></a>
+                    </div>
+                    <a href="files/Binoy-Bhushan-Barman-Dipu-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Binoy Bhushan Barman Dipu. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- -------- for about section tabs ----------- -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var drawer = document.getElementById("drawer");
+
+        function opendrawer() {
+            drawer.style.right = "0";
+        }
+        function closedrawer() {
+            drawer.style.right = "-200px";
+        }
+
+    </script>
+
 </body>
 
 </html>
